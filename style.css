@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-    --primary-purple: #3b0764;
-    --secondary-purple: #701a75;
-    --accent-pink: #d946ef;
-    --accent-pink-hover: #c026d3;
+    /* --- UPDATED ELEGANT COLOR PALETTE --- */
+    --primary-purple: #4B2154; /* Rich, elegant Plum */
+    --secondary-purple: #7B3F70; /* Softer accent purple */
+    --accent-pink: #D98CB3; /* Elegant Dusty Rose instead of neon */
+    --accent-pink-hover: #C4739B; 
     --text-light: #ffffff;
-    --text-dark: #1f2937;
-    --bg-light: #fdf4ff;
+    --text-dark: #2d3748; /* Softer dark grey for better readability */
+    --bg-light: #FCF9FC; /* Very subtle warm off-white */
     --whatsapp-green: #25D366;
 }
 
@@ -83,17 +84,20 @@ nav a:hover {
     border-radius: 30px;
     text-decoration: none;
     font-weight: 500;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(217, 140, 179, 0.3);
 }
 
 .btn-book:hover {
     background-color: var(--accent-pink-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(217, 140, 179, 0.5);
 }
 
 /* --- HERO SECTION --- */
 .hero {
-    /* Lively background image with purple overlay */
-    background: linear-gradient(rgba(59, 7, 100, 0.8), rgba(112, 26, 117, 0.8)), 
+    /* Lighter overlay so the image shows through beautifully */
+    background: linear-gradient(rgba(75, 33, 84, 0.55), rgba(75, 33, 84, 0.75)), 
                 url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     min-height: 80vh;
     display: flex;
@@ -129,7 +133,14 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(217, 140, 179, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-pink-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(217, 140, 179, 0.5);
 }
 
 .btn-outline {
@@ -196,7 +207,7 @@ nav a:hover {
 
 /* --- ARTISTS PAGE --- */
 .artists-hero {
-    background: linear-gradient(rgba(59, 7, 100, 0.9), rgba(112, 26, 117, 0.9)), 
+    background: linear-gradient(rgba(75, 33, 84, 0.7), rgba(75, 33, 84, 0.9)), 
                 url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     padding: 5rem 5%;
     text-align: center;
@@ -317,9 +328,10 @@ footer {
     nav ul { display: none; } /* Add JS hamburger menu for production */
     .hero h1 { font-size: 2.5rem; }
 }
+
 /* --- PAGE HEROES --- */
 .page-hero {
-    background: linear-gradient(rgba(59, 7, 100, 0.85), rgba(112, 26, 117, 0.85)), 
+    background: linear-gradient(rgba(75, 33, 84, 0.65), rgba(75, 33, 84, 0.85)), 
                 url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     padding: 6rem 5%;
     text-align: center;
@@ -479,7 +491,7 @@ footer {
 .gallery-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(112, 26, 117, 0.7);
+    background: rgba(75, 33, 84, 0.7); /* Updated overlay color */
     display: flex;
     justify-content: center;
     align-items: center;
